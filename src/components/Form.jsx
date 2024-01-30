@@ -24,7 +24,7 @@ const BASE_URL = "https://api.bigdatacloud.net/data/reverse-geocode-client"
 
 function Form() {
   const [lat, lng] = useUrlPosition();
-  const { createCities, isLoading } = useCities();
+  const { createCity, isLoading } = useCities();
   const [cityName, setCityName] = useState("");
   const [country, setCountry] = useState("");
   const [date, setDate] = useState(new Date());
@@ -34,7 +34,7 @@ function Form() {
   const [geoCodingError, setGeoCodingError] = useState('');
   const navigate = useNavigate();
 
-  const handleSubmit = async (e, id) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!cityName || !date) return;
@@ -48,7 +48,7 @@ function Form() {
       position: { lat, lng },
     }
 
-    await createCities(newCity);
+    await createCity(newCity);
     navigate("/app")
   }
 

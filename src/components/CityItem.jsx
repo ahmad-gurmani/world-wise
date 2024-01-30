@@ -12,13 +12,12 @@ const formatDate = (date) =>
 
 
 function CityItem({ city }) {
-    const { currentCity, deleteCities } = useCities();
+    const { currentCity, deleteCity } = useCities();
     const { cityName, emoji, date, id, position } = city;
 
     async function handleDelete(e) {
         e.preventDefault();
-        await deleteCities(id);
-        console.log("test");
+        await deleteCity(id);
     }
 
     return (

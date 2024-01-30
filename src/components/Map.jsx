@@ -1,4 +1,4 @@
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { MapContainer, TileLayer, Marker, Popup, useMap, useMapEvents } from 'react-leaflet';
 
 import styles from './Map.module.css';
@@ -13,8 +13,6 @@ function Map() {
     const [mapLat, mapLng] = useUrlPosition();
     const [mapPosition, setMapPosition] = useState([40, 0]);
     const { isLoading: isLoadingPosition, position: geolocationPosition, getPosition } = useGeoLocation();
-
-
 
     useEffect(
         function () {
@@ -41,7 +39,7 @@ function Map() {
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
                 />
-                {cities.map((city) => (
+                {cities?.map((city) => (
                     <Marker
                         position={[city.position.lat, city.position.lng]}
                         key={city.id}
