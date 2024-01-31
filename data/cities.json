@@ -1,18 +1,6 @@
 {
   "cities": [
     {
-      "id": "7ebe",
-      "cityName": "Pinto",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2024-01-29T20:32:31.801Z",
-      "notes": "",
-      "position": {
-        "lat": "40.26276066437183",
-        "lng": "-3.6694335937500004"
-      }
-    },
-    {
       "id": "fbe1",
       "cityName": "Gosol",
       "country": "Spain",
@@ -37,15 +25,39 @@
       }
     },
     {
-      "id": "e33f",
-      "cityName": "Zaragoza",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2024-01-30T14:14:39.111Z",
+      "id": "606a",
+      "cityName": "Wissous",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2024-01-31T17:55:49.639Z",
       "notes": "",
       "position": {
-        "lat": "41.5579215778042",
-        "lng": "-0.8569335937500001"
+        "lat": "48.748945343432936",
+        "lng": "2.3291015625000004"
+      }
+    },
+    {
+      "id": "db21",
+      "cityName": "Campillo de Altobuey",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-01-31T17:58:31.903Z",
+      "notes": "",
+      "position": {
+        "lat": "39.62261494094297",
+        "lng": "-1.8676757812500002"
+      }
+    },
+    {
+      "id": "a438",
+      "cityName": "As Sab‘ Biyar",
+      "country": "Syrian Arab Republic (the)",
+      "emoji": "🇸🇾",
+      "date": "2024-01-31T18:57:57.712Z",
+      "notes": "",
+      "position": {
+        "lat": "32.99023555965106",
+        "lng": "38.05664062500001"
       }
     }
   ]
